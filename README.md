@@ -16,11 +16,7 @@ Currently the requirements file is a little larger than it should be, installed 
 pip install -r requirements.txt
 ```
 ## Diagrams
-
-<p align="center">
-  <img src="https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png" width="300" title="hover text">
-</p>
-
+![alt text](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
 
 
 ## TODO
@@ -33,4 +29,4 @@ pip install -r requirements.txt
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-![alt text](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
+
