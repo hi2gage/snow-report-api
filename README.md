@@ -21,6 +21,42 @@ Current API architecture for the system
 
 ![alt text](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
 
+### Important Controller Methods
+```python
+# get all snow reports
+@staticmethod
+def get_all():
+   returns all snow reports from database
+
+
+# get most recent snow reports
+@staticmethod
+def get_recent_sql():
+   returns most recent snow report from database
+
+
+# commits data frin current object to database
+@staticmethod
+def commit_to_SQL(self):
+   SQL commit
+   return most recent snow report from database
+
+
+# returns all snow reports from given date
+@staticmethod
+def find_by_date(find_date):
+   return list of snow reports from database with given date
+```
+
+#### API Paths
+```python
+api.add_resource(fetchAll, '/')
+api.add_resource(fetchRecentSQL, '/recent-sql')
+api.add_resource(fetchByDate, '/date')
+api.add_resource(scrap, '/scrap')
+```
+
+
 
 ### TODO
 - [ ] Clean up requirements.txt
