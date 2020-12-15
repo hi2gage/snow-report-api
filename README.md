@@ -69,7 +69,8 @@ api.add_resource(scrap, '/scrap')
 * Alarm Clock
 * IOS app
 
-### License
-[MIT](https://choosealicense.com/licenses/mit/)
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
 
 
