@@ -10,8 +10,8 @@
     <li>
         <a href="#System Architecture">System Architecture</a>
             <ul>
-                <li><a href="#Diagrams:">Diagrams:</a></li>
-                <li><a href="#Snow Report Attributes:">Report Attributes:</a></li>
+                <li><a href="#Diagrams">Diagrams</a></li>
+                <li><a href="#Snow Report Attributes">Snow Report Attributes</a></li>
             </ul>
     </li>
     <li><a href="#Important Controller Methods">Important Controller Methods</a></li>
@@ -40,12 +40,12 @@ The main purpose of this project is to learn the process of building an API with
    ```
 
 ## System Architecture
-#### Diagrams:
+#### Diagrams
 Current API architecture for the system
 
 ![System Diagram](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
 
-#### Snow Report Attributes:
+#### Snow Report Attributes
 * day_id (Primary Key)
 * data_time
 * overnight_snow 
