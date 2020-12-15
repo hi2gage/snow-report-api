@@ -17,7 +17,7 @@
     <li><a href="#Important-Controller-Methods">Important Controller Methods</a></li>
     <li><a href="#API-Paths">API Paths</a></li>
     <li><a href="#TODO">TODO</a></li>
-    <li><a href="#Future-Project">Future Project</a></li>
+    <li><a href="#Future-Projects">Future Projects</a></li>
     <li><a href="#License">License</a></li>
   </ol>
 </details>
