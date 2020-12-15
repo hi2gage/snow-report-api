@@ -1,11 +1,31 @@
 # Snow Report API
 
+
+
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li><a href="##about-the-project">About The Project</a></li>
+    <li><a href="##Installation">Installation</a></li>
+    <li><a href="##System Architecture">System Architecture</a>
+    <ul><li><a href="####Diagrams">Diagrams</a></li>
+        <li><a href="####Snow Report Attributes">Report Attributes</a></li>
+      </ul>
+    <li><a href="####Important Controller Methods">Important Controller Methods</a></li>
+    <li><a href="####API Paths">API Paths</a></li>
+    <li><a href="####TODO">TODO</a></li>
+    <li><a href="####Future Project">Future Project</a></li>
+    <li><a href="#License">License</a></li>
+  </ol>
+</details>
+
+## About The Project
 Like most snow sport enthusiasts, I aim to leave my house at different times depending on how much new snow there is at the mountain.
 I wanted my raspberry Pi to access the most rececent snow report in and decide what time my alarm would go off. Since my local resort didn't seem to have a public API to give me the morning snow report I decided to build my own.
 
 The main purpose of this project is to learn the process of building an API with Flask and will be used to collect, store and distribute the snow report for two resorts. The next project will be building the alarm clock and writing the alarm application. 
 
-### Installation
+## Installation
 
 1. Clone the repo
    ```bash
@@ -17,14 +37,12 @@ The main purpose of this project is to learn the process of building an API with
    ```
 
 ## System Architecture
-### Diagrams:
+#### Diagrams:
 Current API architecture for the system
 
 ![System Diagram](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
 
-### Snow Report Attributes:
-
-
+#### Snow Report Attributes:
 * day_id (Primary Key)
 * data_time
 * overnight_snow 
@@ -39,7 +57,7 @@ Current API architecture for the system
 
 
 
-### Important Controller Methods
+#### Important Controller Methods
 ```python
 # get all snow reports
 def get_all():
@@ -72,18 +90,18 @@ api.add_resource(scrap, '/scrap')
 
 
 
-### TODO
+#### TODO
 - [ ] Clean up requirements.txt
 - [ ] Test that the automated scheduler works
 - [ ] Comment all code
 - [ ] Remove all unnecessary code
 - [ ] Build front side website
 
-### Future Projects:
+#### Future Projects:
 * Alarm Clock
 * IOS app
 
-## License
+#License
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
