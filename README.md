@@ -100,11 +100,11 @@ api.add_resource(scrap, '/scrap')
 - [ ] Remove all unnecessary code
 - [ ] Build front side website
 
-#### Future Projects:
+#### Future Projects
 * Alarm Clock
 * IOS app
 
-#License
+# License
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
