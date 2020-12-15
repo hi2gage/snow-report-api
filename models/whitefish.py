@@ -86,19 +86,6 @@ class WhiteFishModel:
         print('--------------------------------------------------------')
 
     @staticmethod
-    def get_all():
-        c, conn = sql_connection()
-        c.execute("SELECT * FROM whitefish")
-        results = c.fetchall()
-        print(results, sep='\n')
-        result_list = []
-        for r in results:
-            result_list.append(WhiteFishModel(r))
-        print(result_list)
-        print_list(result_list)
-        return result_list
-
-    @staticmethod
     def get_recent_sql():
         c, conn = sql_connection()
         c.execute("SELECT *, max(dayId) FROM whitefish")

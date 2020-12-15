@@ -29,7 +29,7 @@ api = Api(app)
 
 
 # returns all of the entries in the database
-class getAll(Resource):
+class fetchAll(Resource):
     @staticmethod
     def get():
         model = controller.get_all()
@@ -37,7 +37,7 @@ class getAll(Resource):
 
 
 # Returns the most recent entry in the database
-class recentSQL(Resource):
+class fetchRecentSQL(Resource):
     @staticmethod
     def get():
         model = controller.get_recent_SQL()
@@ -68,8 +68,8 @@ class FetchNew(Resource):
         return vars(controller.get_recent_web(refresh=True))
 
 
-api.add_resource(getAll, '/')
-api.add_resource(recentSQL, '/recent-sql')
+api.add_resource(fetchAll, '/')
+api.add_resource(fetchRecentSQL, '/recent-sql')
 api.add_resource(fetchByDate, '/date')
 api.add_resource(scrap, '/scrap')
 
