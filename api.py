@@ -15,7 +15,7 @@ def is_it_time_yet(beginning_hour, ending_hour):
 
 def run_scrap():
     if is_it_time_yet(5, 20):
-        controller.get_recent_web(refresh=True)
+        controller.web_to_sql(refresh=True)
 
 
 # Making sure that the scraper runs every hour
