@@ -7,11 +7,13 @@
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#Installation">Installation</a></li>
-    <li><a href="#System Architecture">System Architecture</a>
-    <ul>
-        <a href="#Diagrams">Diagrams</a>
-        <a href="#Snow Report Attributes">Report Attributes</a>
-    </ul>
+    <li>
+        <a href="#System Architecture">System Architecture</a>
+            <ul>
+                <li><a href="#Diagrams">Diagrams</a></li>
+                <li><a href="#Snow Report Attributes">Report Attributes</a></li>
+            </ul>
+    </li>
     <li><a href="#Important Controller Methods">Important Controller Methods</a></li>
     <li><a href="#API Paths">API Paths</a></li>
     <li><a href="#TODO">TODO</a></li>
