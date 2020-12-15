@@ -24,28 +24,24 @@ Current API architecture for the system
 ### Important Controller Methods
 ```python
 # get all snow reports
-@staticmethod
 def get_all():
    returns all snow reports from database
 
 
 # get most recent snow reports
-@staticmethod
 def get_recent_sql():
    returns most recent snow report from database
 
 
 # commits data frin current object to database
-@staticmethod
-def commit_to_SQL(self):
-   SQL commit
+def web_to_sql():
+   Scraps webside and adds snow report to database
    return most recent snow report from database
 
 
-# returns all snow reports from given date
-@staticmethod
-def find_by_date(find_date):
-   return list of snow reports from database with given date
+# resets database
+def delete_all_entries():
+   deletes all database entries and restarts primary key auto increments
 ```
 
 #### API Paths
