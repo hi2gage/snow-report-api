@@ -165,7 +165,8 @@ class WhiteFishModel:
     def get_wind_visibility(self):
         return self.viz_wind
 
-    def all(self):
+    @staticmethod
+    def get_all():
         c, conn = sql_connection()
         c.execute("SELECT * FROM whitefish")
         results = c.fetchall()

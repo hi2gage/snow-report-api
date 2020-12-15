@@ -41,7 +41,7 @@ def get_recent_SQL():
 def get_all():
     # returns list of all Models from SQL
     model = whitefish.WhiteFishModel()
-    model_list = model.all()
+    model_list = model.get_all()
     return [vars(models) for models in model_list]
 
 
