@@ -1,3 +1,9 @@
+# Mac Stuff
+**/.DS_Store
+
+
+
+# python stuff
 __pycache__/
 .env
 .venv
