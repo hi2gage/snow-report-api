@@ -101,7 +101,7 @@ def delete_all_entries():
 ```python
 api.add_resource(fetchAll, '/')
 api.add_resource(fetchRecentSQL, '/recent-sql')
-api.add_resource(fetchByDate, '/date')
+api.add_resource(fetchByDate, '/date') # parameter ?d=YYYY-MM-DD 
 api.add_resource(scrap, '/scrap')
 ```
 
