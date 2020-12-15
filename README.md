@@ -5,10 +5,10 @@ A custom API to scrap snow report from ski resort websites
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li>
-        <a href="#about-the-project">About The Project</a>
-            <ul>
-                <li><a href="#Build-with">Built with</a></li>
-           </ul>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
     </li>
     <li><a href="#Installation">Installation</a></li>
     <li>
