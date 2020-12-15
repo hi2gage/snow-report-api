@@ -18,6 +18,7 @@ The main purpose of this project is to learn the process of building an API with
 
 ### Diagrams
 Current API architecture for the system
+
 ![alt text](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
 
 
