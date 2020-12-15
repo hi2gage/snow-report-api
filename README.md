@@ -16,27 +16,45 @@ The main purpose of this project is to learn the process of building an API with
    pip install -r requirements.txt
    ```
 
-### Diagrams
+## System Architecture
+### Diagrams:
 Current API architecture for the system
 
-![alt text](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
+![System Diagram](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
+
+### Snow Report Attributes:
+
+
+* day_id (Primary Key)
+* data_time
+* overnight_snow 
+* settled_base 
+* total_to_date 
+* six_am_temp 
+* twenty_four_hr_snow 
+* seven_day_snow 
+* current_conditions 
+* visibility 
+* wind 
+
+
 
 ### Important Controller Methods
 ```python
 # get all snow reports
 def get_all():
-   returns all snow reports from database
+   returns #all snow reports from database
 
 
 # get most recent snow reports
 def get_recent_sql():
-   returns most recent snow report from database
+   returns #most recent snow report from database
 
 
 # commits data frin current object to database
 def web_to_sql():
-   Scraps webside and adds snow report to database
-   return most recent snow report from database
+   scraps webside and adds snow report to database
+   return #most recent snow report from database
 
 
 # resets database

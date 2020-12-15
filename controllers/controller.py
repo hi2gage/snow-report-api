@@ -13,7 +13,7 @@ def find_by_date(find_date):
 
 def delete_all_entries():
     model = whitefish
-    model = model.delete()
+    model.delete()
 
 
 def get_recent_web(resort="wf", refresh=False):

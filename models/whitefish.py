@@ -24,6 +24,8 @@ def delete():
     c, conn = sql_connection()
     c.execute("Delete FROM whitefish where wind IS NOT NULL")
     conn.commit()
+    c.execute("UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='whitefish'")
+    conn.commit()
     conn.close()
 
 
