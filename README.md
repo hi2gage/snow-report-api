@@ -10,8 +10,8 @@
     <li>
         <a href="#System Architecture">System Architecture</a>
             <ul>
-                <li><a href="#Diagrams">Diagrams</a></li>
-                <li><a href="#Snow Report Attributes">Report Attributes</a></li>
+                <li><a href="#Diagrams:">Diagrams</a></li>
+                <li><a href="#Snow Report Attributes:">Report Attributes</a></li>
             </ul>
     </li>
     <li><a href="#Important Controller Methods">Important Controller Methods</a></li>
