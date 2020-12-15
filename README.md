@@ -16,24 +16,19 @@ The main purpose of this project is to learn the process of building an API with
    pip install -r requirements.txt
    ```
 
-
-## Requirements
-Currently the requirements file is a little larger than it should be, installed some packages that I actually will not be using so I will be updating it soon.
-```bash
-pip install -r requirements.txt
-```
-## Diagrams
+### Diagrams
+Current API architecture for the system
 ![alt text](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
 
 
-## TODO
+### TODO
 - [ ] Clean up requirements.txt
 - [ ] Test that the automated scheduler works
 - [ ] Comment all code
 - [ ] Remove all unnecessary code
 - [ ] Build front side website
 
-## License
+### License
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
