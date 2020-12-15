@@ -17,7 +17,11 @@ pip install -r requirements.txt
 ```
 ## Diagrams
 
-![alt text](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
+<p align="center">
+  <img src="https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png" width="300" title="hover text">
+</p>
+
+
 
 ## TODO
 - [ ] Clean up requirements.txt
@@ -28,3 +32,5 @@ pip install -r requirements.txt
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+![alt text](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
