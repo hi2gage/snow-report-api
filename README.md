@@ -15,7 +15,16 @@ Currently the requirements file is a little larger than it should be, installed 
 ```bash
 pip install -r requirements.txt
 ```
+## Diagrams
 
+![alt text](https://github.com/hi2gage/snow-report-api/blob/main/diagrams/main-layout.png)
+
+## TODO
+- [ ] Clean up requirements.txt
+- [ ] Test that the automated scheduler works
+- [ ] Comment all code
+- [ ] Remove all unnecessary code
+- [ ] Build front side website
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
