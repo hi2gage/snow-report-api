@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import os.path
 import pickle as pickle
-import pprint as pprint
 import datetime
 import re
 

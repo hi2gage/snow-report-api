@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, request
-from flask import render_template
-from controllers import controller
+from controllers import whitefish
 from flask_restful import Resource, Api
 from apscheduler.schedulers.background import BackgroundScheduler
 import time
@@ -15,7 +14,7 @@ def is_it_time_yet(beginning_hour, ending_hour):
 
 def run_scrap():
     if is_it_time_yet(5, 20):
-        controller.web_to_sql(refresh=True)
+        whitefish.web_to_sql(refresh=True)
 
 
 # Making sure that the scraper runs every hour
@@ -32,7 +31,7 @@ api = Api(app)
 class fetchAll(Resource):
     @staticmethod
     def get():
-        model = controller.get_all()
+        model = whitefish.get_all()
         return jsonify(model)
 
 
@@ -40,7 +39,7 @@ class fetchAll(Resource):
 class fetchRecentSQL(Resource):
     @staticmethod
     def get():
-        model = controller.get_recent_SQL()
+        model = whitefish.get_recent_SQL()
         print(type(vars(model)))
         return vars(model)
 
@@ -51,7 +50,7 @@ class fetchByDate(Resource):
     def get():
         args = request.args
         date_str = args.get('d')
-        results = controller.find_by_date(date_str)
+        results = whitefish.find_by_date(date_str)
         return jsonify(results)
 
 
@@ -59,13 +58,13 @@ class fetchByDate(Resource):
 class scrap(Resource):
     @staticmethod
     def get():
-        return vars(controller.web_to_sql(refresh=True))
+        return vars(whitefish.web_to_sql(refresh=True))
 
 
 class FetchNew(Resource):
     @staticmethod
     def get():
-        return vars(controller.get_recent_web(refresh=True))
+        return vars(whitefish.get_recent_web(refresh=True))
 
 
 api.add_resource(fetchAll, '/')
@@ -76,4 +75,4 @@ api.add_resource(scrap, '/scrap')
 api.add_resource(FetchNew, '/fetch-new')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, threaded=True)
+    app.run(host='0.0.0.0', port=5000, threaded=True, debug=True)
