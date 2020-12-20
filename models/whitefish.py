@@ -3,7 +3,6 @@ import sys
 import datetime
 import json
 from json import JSONEncoder
-from datetime import date
 
 sys.path.append('/')
 import scraper
