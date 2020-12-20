@@ -3,6 +3,7 @@ from controllers import whitefish
 from flask_restful import Resource, Api
 from apscheduler.schedulers.background import BackgroundScheduler
 import time
+import datetime
 
 
 # Checks to see if it is the proper time to check the plant
@@ -14,13 +15,15 @@ def is_it_time_yet(beginning_hour, ending_hour):
 
 def run_scrap():
     if is_it_time_yet(5, 20):
+        print(datetime.datetime.now())
         whitefish.web_to_sql(refresh=True)
 
 
 # Making sure that the scraper runs every hour
 scheduler = BackgroundScheduler(daemon=True)
-scheduler.add_job(run_scrap, 'interval', hours=1)
-# scheduler.start()
+scheduler.add_job(run_scrap, 'interval', hour=1)
+print("job starting")
+scheduler.start()
 
 app = Flask(__name__)
 app.debug = True
