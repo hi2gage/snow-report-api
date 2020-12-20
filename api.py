@@ -21,7 +21,7 @@ def run_scrap():
 
 # Making sure that the scraper runs every hour
 scheduler = BackgroundScheduler(daemon=True)
-scheduler.add_job(run_scrap, 'interval', hour=1)
+scheduler.add_job(run_scrap, 'interval', hours=1)
 print("job starting")
 scheduler.start()
 
