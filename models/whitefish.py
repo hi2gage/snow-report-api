@@ -36,7 +36,7 @@ class MyEncoder(JSONEncoder):
 class WhiteFishModel:
     def __init__(self, tuple_value=None):
         if tuple_value is None:
-            self.day_id = None
+            self.id = None
             self.data_time = None
             self.overnight_snow = None
             self.settled_base = None
@@ -49,7 +49,7 @@ class WhiteFishModel:
             self.wind = None
 
         elif len(tuple_value) > 9:
-            self.day_id = tuple_value[0]
+            self.id = tuple_value[0]
             self.data_time = tuple_value[1]
             self.overnight_snow = tuple_value[2]
             self.settled_base = tuple_value[3]
@@ -62,7 +62,7 @@ class WhiteFishModel:
             self.wind = tuple_value[10]
 
         else:
-            self.day_id = None
+            self.id = None
             self.data_time = None
             self.overnight_snow = tuple_value[0]
             self.settled_base = tuple_value[1]
@@ -89,7 +89,7 @@ class WhiteFishModel:
     @staticmethod
     def get_recent_sql():
         c, conn = sql_connection()
-        c.execute("SELECT *, max(dayId) FROM whitefish")
+        c.execute("SELECT *, max(id) FROM whitefish")
         results = c.fetchone()
         # print(results)
         return WhiteFishModel(results)
@@ -169,7 +169,7 @@ class WhiteFishModel:
     @staticmethod
     def get_all():
         c, conn = sql_connection()
-        c.execute("SELECT * FROM whitefish")
+        c.execute("SELECT * FROM whitefish ORDER BY id DESC")
         results = c.fetchall()
         model_list = []
         for r in results:

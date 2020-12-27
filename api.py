@@ -43,7 +43,7 @@ class fetchRecentSQL(Resource):
     @staticmethod
     def get():
         model = whitefish.get_recent_SQL()
-        print(type(vars(model)))
+        # print(type(vars(model)))
         return vars(model)
 
 
